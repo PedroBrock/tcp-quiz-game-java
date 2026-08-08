@@ -19,8 +19,8 @@ A comunicação segue o modelo **cliente-servidor**:
 ```
 ┌─────────────────┐        TCP (porta 1234)        ┌──────────────────────┐
 │  PlayerSocket   │ ◄────────────────────────────► │    CachedServer      │
-│   (Cliente)     │    perguntas / respostas        │  (Servidor + Threads)│
-└─────────────────┘                                 └──────────────────────┘
+│   (Cliente)     │    perguntas / respostas       │ (Servidor + Threads) │
+└─────────────────┘                                └──────────────────────┘
                                                              │
                                                     ┌────────┴────────┐
                                                     │   QuizSocket    │
